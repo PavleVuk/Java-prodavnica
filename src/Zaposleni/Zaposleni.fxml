@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Zaposleni.ZaposleniController">
+   <children>
+      <HBox layoutX="471.0" layoutY="44.0" prefHeight="604.0" prefWidth="323.0">
+         <children>
+            <TableView fx:id="artiklitable" prefHeight="604.0" prefWidth="324.0">
+               <columns>
+                  <TableColumn fx:id="idcolumn" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nazivcolumn" prefWidth="75.0" text="NAZIV" />
+                  <TableColumn fx:id="katcolumn" prefWidth="98.0" text="KATEGORIJA" />
+                  <TableColumn fx:id="cenacolumn" prefWidth="75.0" text="CENA" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <VBox layoutX="63.0" layoutY="44.0" prefHeight="604.0" prefWidth="374.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#loadArtikliData" prefHeight="25.0" prefWidth="314.0" text="Učitaj podatke">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="del" mnemonicParsing="false" onAction="#brisiArtikl" prefHeight="25.0" prefWidth="314.0" text="Brisanje ">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#adminLogin" prefHeight="25.0" prefWidth="315.0" text="Izmena/dodavanje artikala">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
